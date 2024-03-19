@@ -1,0 +1,86 @@
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    margin-top: 50px;
+}
+
+h2 {
+    color: #555;
+    margin-top: 20px;
+}
+
+.btn {
+    height: 100px; /* Adjusted height */
+    width: 100px; /* Adjusted width */
+    border-radius: 50%;
+    border: 8px solid rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.line-one, .line-two {
+    display: flex;
+}
+
+.red {
+    background-color: #ff0000; /* Adjusted red color */
+}
+
+.yellow {
+    background-color: #ffff00; /* Adjusted yellow color */
+}
+
+.green {
+    background-color: #00ff00; /* Adjusted green color */
+}
+
+.purple {
+    background-color: #800080; /* Adjusted purple color */
+}
+
+.flash {
+    animation: flash-animation 0.5s infinite alternate;
+}
+
+.userflash {
+    animation: userflash-animation 0.5s infinite alternate;
+}
+
+@keyframes flash-animation {
+    from {
+        background-color: #ffffff; /* Adjusted flash color to white */
+    }
+    to {
+        background-color: inherit;
+    }
+}
+
+@keyframes userflash-animation {
+    from {
+        background-color: #00ff00; /* Adjusted flash color to green */
+    }
+    to {
+        background-color: inherit;
+    }
+}
